@@ -15,6 +15,11 @@ public class CajeroController {
     @Autowired
     private CajeroService cajeroService;
 
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+
     @GetMapping("/cajero")
     public String cajero(Model model) {
 
